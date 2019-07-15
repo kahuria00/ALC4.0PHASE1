@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyProfile">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".myProfile">
+
+
+        <ImageView
+            android:id="@+id/myProfilePic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="@dimen/margin_top_end_image"
+            android:contentDescription="@string/my_profile_pic"
+            android:scaleType="center"
+            app:srcCompat="@drawable/my_profile_picture" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margins"
+            android:layout_marginTop="@dimen/margins"
+            android:layout_marginEnd="@dimen/margins"
+            android:fontFamily= "sans-serif-condensed"
+            android:text="@string/my_name"
+            android:textColor="@color/colorPrimary"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@color/colorPrimary"/>
+
+
+        <TextView
+            android:id="@+id/track_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_textview"
+            android:textColor="@android:color/black"
+            android:layout_marginStart="@dimen/margin_start"
+            android:textSize="@dimen/text_size_others"
+            android:layout_marginEnd="@dimen/margin_end"
+            android:text="@string/my_track" />
+
+        <TextView
+            android:id="@+id/email_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start"
+            android:layout_marginTop="@dimen/margin_top_textview"
+            android:layout_marginEnd="@dimen/margin_end"
+            android:textSize="@dimen/text_size_others"
+            android:textColor="@android:color/black"
+            android:text="@string/my_email" />
+
+        <TextView
+            android:id="@+id/phone_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginStart="@dimen/margin_start"
+            android:layout_marginTop="@dimen/margin_top_textview"
+            android:textSize="@dimen/text_size_others"
+            android:layout_marginEnd="@dimen/margin_end"
+            android:text="@string/my_phone_number" />
+
+        <TextView
+            android:id="@+id/Slack_username_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginStart="16dp"
+
+            android:text="@string/my_slack_username" />
+
+    </LinearLayout>
+    </ScrollView>
+
+
+
+</android.support.design.widget.CoordinatorLayout>
